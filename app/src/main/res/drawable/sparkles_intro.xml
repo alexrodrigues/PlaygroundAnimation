@@ -2,6 +2,8 @@
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:duration="200" android:drawable="@drawable/faiscas_intro_00130"/>
+
+    <item android:duration="200" android:drawable="@drawable/faiscas_intro_00130"/>
     <item android:duration="200" android:drawable="@drawable/faiscas_intro_00131"/>
     <item android:duration="200" android:drawable="@drawable/faiscas_intro_00132"/>
     <item android:duration="200" android:drawable="@drawable/faiscas_intro_00133"/>

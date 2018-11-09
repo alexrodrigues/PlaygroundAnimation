@@ -97,8 +97,8 @@
         android:id="@+id/ivSparkingIntro"
         android:alpha="0"
         android:background="@drawable/sparkles_intro"
-        android:layout_width="4500dp"
-        android:layout_height="4500dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </RelativeLayout>
