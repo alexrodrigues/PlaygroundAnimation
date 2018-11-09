@@ -19,8 +19,17 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/cover"/>
 
+
     <ImageView
         android:id="@+id/ivCoverSecundary"
+        android:layout_width="140dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cover"/>
+
+    <View
+        android:id="@+id/vReferencia"
         android:layout_width="140dp"
         android:layout_height="210dp"
         android:layout_centerHorizontal="true"

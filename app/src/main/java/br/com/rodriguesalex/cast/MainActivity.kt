@@ -67,16 +67,16 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         val statusBarOffset = dm.heightPixels - root.measuredHeight
 
         val originalPos = IntArray(2)
-        ivCoverPrimary.getLocationOnScreen(originalPos)
+        ivCoverSecundary.getLocationOnScreen(originalPos)
 
         var xDest = dm.widthPixels / 2
-        xDest -= ivCoverSecundary.getMeasuredWidth() / 2
-        val yDest = dm.heightPixels / 2 - ivCoverSecundary.getMeasuredHeight() / 2 - statusBarOffset
+        xDest -= vReferencia.measuredWidth / 2
+        val yDest = dm.heightPixels / 2 - (vReferencia.getMeasuredHeight() / 2 - statusBarOffset)
 
         val anim = TranslateAnimation(0f, (xDest - originalPos[0]).toFloat(), 0f, (yDest - originalPos[1]).toFloat())
         anim.duration = 1000
         anim.fillAfter = true
-        ivCoverPrimary.startAnimation(anim)
+        ivCoverSecundary.startAnimation(anim)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
