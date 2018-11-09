@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="200" android:drawable="@drawable/estrelas_0075"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0076"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0077"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0078"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0079"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0080"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0081"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0082"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0083"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0084"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0085"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0086"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0087"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0088"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0089"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0090"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0091"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0092"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0093"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0094"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0095"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0096"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0097"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0098"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0099"/>
+    <item android:duration="200" android:drawable="@drawable/estrelas_0100"/>
+
+
+</animation-list>

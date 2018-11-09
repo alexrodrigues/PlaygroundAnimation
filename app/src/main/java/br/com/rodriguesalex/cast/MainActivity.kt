@@ -8,7 +8,9 @@ import android.util.DisplayMetrics
 import android.view.Menu
 import android.view.MenuItem
 import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.view.animation.TranslateAnimation
+import android.widget.RelativeLayout
 import android.widget.SeekBar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -16,13 +18,6 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
-    private val formationSparkles = intArrayOf(R.drawable.formacao_1, R.drawable.formacao_2,
-                        R.drawable.formacao_3, R.drawable.formacao_4, R.drawable.formacao_5,
-            R.drawable.formacao_6, R.drawable.formacao_7, R.drawable.formacao_8, R.drawable.formacao_9,
-            R.drawable.formacao_10, R.drawable.formacao_11, R.drawable.formacao_12, R.drawable.formacao_13,
-            R.drawable.formacao_14, R.drawable.formacao_15, R.drawable.formacao_16, R.drawable.formacao_17,
-            R.drawable.formacao_18, R.drawable.formacao_20, R.drawable.formacao_21, R.drawable.formacao_22,
-            R.drawable.formacao_23, R.drawable.formacao_24, R.drawable.formacao_25, R.drawable.formacao_26)
 
     override fun onStartTrackingTouch(p0: SeekBar?) {
     }
@@ -52,6 +47,12 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                 }
             }, 3000)
         }
+    }
+
+    private fun boucing(target: RelativeLayout) {
+        val animation = AnimationUtils.loadAnimation(this, R.anim.boucing)
+        animation.repeatCount = Animation.INFINITE
+        target.startAnimation(animation)
     }
 
     private fun dismissFirstMoment() {
@@ -88,6 +89,8 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
     private fun showEtherBackground() {
         ivEtherBackground.animate().alpha(1f).setDuration(2000)
+        ivSparkingEther.animate().alpha(1f).setDuration(2000)
+        (ivSparkingEther.background as AnimationDrawable).start()
     }
 
     private fun playFormation() {
