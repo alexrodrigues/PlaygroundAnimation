@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
             playFormation()
@@ -83,9 +82,13 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         anim.fillAfter = true
         rlSecondMoment.startAnimation(anim)
 
+        showEtherBackground()
         playSparkling()
     }
 
+    private fun showEtherBackground() {
+        ivEtherBackground.animate().alpha(1f).setDuration(2000)
+    }
 
     private fun playFormation() {
         (ivSparkle1.background as AnimationDrawable).start()

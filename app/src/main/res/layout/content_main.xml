@@ -38,6 +38,14 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/ivEtherBackground"
+        android:alpha="0.0"
+        android:src="@drawable/fundo_etereo"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <RelativeLayout
         android:alpha="0.0"
         android:id="@+id/rlSecondMoment"
