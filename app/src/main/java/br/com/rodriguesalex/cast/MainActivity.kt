@@ -21,6 +21,11 @@ import com.google.android.exoplayer2.util.Util
 import kotlinx.android.synthetic.main.content_main.*
 import com.google.android.exoplayer2.upstream.RawResourceDataSource
 import com.google.android.exoplayer2.source.MediaSource
+import android.view.animation.TranslateAnimation
+import android.util.DisplayMetrics
+import android.widget.RelativeLayout
+
+
 
 
 
@@ -31,11 +36,11 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     override fun onStopTrackingTouch(p0: SeekBar?) {
-        p0?.progress?.let {
-            val float = (it.toFloat()/100f)
-            container.alpha =  float
-            tvAlphaValue.text = "Alpha: $float"
-        }
+//        p0?.progress?.let {
+//            val float = (it.toFloat()/100f)
+//            container.alpha =  float
+//            tvAlphaValue.text = "Alpha: $float"
+//        }
     }
 
     override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
@@ -48,27 +53,30 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+            moveToCenter()
         }
 
-        setupVideo()
 
-        seekBar.setOnSeekBarChangeListener(this)
-
-        Glide.with(this).load(R.drawable.example).into(ivGif)
     }
 
-    private fun setupVideo() {
-        val dataSourceFactory = DefaultDataSourceFactory(this,
-                Util.getUserAgent(this, "mediaPlayerSample"), DefaultBandwidthMeter())
+    private fun moveToCenter() {
 
-        val uri = Uri.parse("https://s3-sa-east-1.amazonaws.com/bff-ms-music-dev/dev/polo.mp4")
-        val mediaSource = ExtractorMediaSource(uri, dataSourceFactory, DefaultExtractorsFactory(), null, null)
-        val player = ExoPlayerFactory.newSimpleInstance(this, DefaultTrackSelector())
-        player.prepare(mediaSource)
-        player.playWhenReady = true
-        exoplayer.player = player
+        val dm = DisplayMetrics()
+        // this.getWindowManager().getDefaultDisplay().getMetrics( dm );
+        windowManager.defaultDisplay.getMetrics(dm)
+        val statusBarOffset = dm.heightPixels - root.measuredHeight
+
+        val originalPos = IntArray(2)
+        ivCoverPrimary.getLocationOnScreen(originalPos)
+
+        var xDest = dm.widthPixels / 2
+        xDest -= ivCoverSecundary.getMeasuredWidth() / 2
+        val yDest = dm.heightPixels / 2 - ivCoverSecundary.getMeasuredHeight() / 2 - statusBarOffset
+
+        val anim = TranslateAnimation(0f, (xDest - originalPos[0]).toFloat(), 0f, (yDest - originalPos[1]).toFloat())
+        anim.duration = 1000
+        anim.fillAfter = true
+        ivCoverPrimary.startAnimation(anim)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
