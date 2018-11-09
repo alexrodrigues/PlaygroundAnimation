@@ -54,6 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+
+
     <RelativeLayout
         android:alpha="0.0"
         android:id="@+id/rlSecondMoment"
@@ -89,6 +91,14 @@
         android:layout_centerVertical="true"
         android:visibility="invisible"
         android:src="@drawable/cover"/>
+
+
+    <ImageView
+        android:id="@+id/ivSparkingIntro"
+        android:alpha="0"
+        android:background="@drawable/sparkles_intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </RelativeLayout>

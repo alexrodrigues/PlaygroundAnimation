@@ -39,13 +39,17 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         fab.setOnClickListener { view ->
             playFormation()
-
             Handler().postDelayed({
                 runOnUiThread {
                     dismissFirstMoment()
                     showSecondMoment()
                 }
             }, 3000)
+            Handler().postDelayed({
+                runOnUiThread {
+                    startDisneyParticleIntro()
+                }
+            }, 6000)
         }
     }
 
@@ -99,6 +103,11 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
     private fun playSparkling() {
         (ivSparkle.background as AnimationDrawable).start()
+    }
+
+    private fun startDisneyParticleIntro() {
+        ivSparkingIntro.animate().alpha(1f).setDuration(1000)
+        (ivSparkingIntro.background as AnimationDrawable).start()
     }
 
     /*
