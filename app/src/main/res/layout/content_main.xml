@@ -11,32 +11,67 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ImageView
-        android:id="@+id/ivCoverPrimary"
-        android:layout_width="140dp"
-        android:layout_height="210dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/cover"/>
+
+    <RelativeLayout
+        android:id="@+id/rlFirstMoment"
+        android:layout_width="200dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/ivSparkle1"
+            android:background="@drawable/formacao_animation_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivCoverPrimary"
+            android:layout_width="140dp"
+            android:layout_height="210dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cover"/>
 
 
-    <ImageView
-        android:id="@+id/ivCoverSecundary"
-        android:layout_width="140dp"
-        android:layout_height="210dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/cover"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:alpha="0.0"
+        android:id="@+id/rlSecondMoment"
+        android:layout_width="200dp"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/ivSparkle"
+            android:background="@drawable/sparkling_animation_list"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivCoverSecundary"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="140dp"
+            android:layout_height="210dp"
+            android:src="@drawable/cover"/>
+
+    </RelativeLayout>
+
 
     <View
         android:id="@+id/vReferencia"
-        android:layout_width="140dp"
-        android:layout_height="210dp"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:visibility="invisible"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
         android:src="@drawable/cover"/>
 
 
