@@ -1,22 +1,17 @@
 package br.com.rodriguesalex.cast
 
 import android.graphics.drawable.AnimationDrawable
-import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.util.DisplayMetrics
 import android.view.Menu
 import android.view.MenuItem
+import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
 import android.widget.SeekBar
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import android.support.v4.media.session.MediaControllerCompat.setMediaController
-import android.view.View
-import android.widget.MediaController
-import android.widget.VideoView
-import com.bumptech.glide.Glide
 
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
@@ -49,7 +44,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         setSupportActionBar(toolbar)
 
         fab.setOnClickListener { view ->
-            playSparkleInFormation()
+            playFormation()
 
             Handler().postDelayed({
                 runOnUiThread {
@@ -87,12 +82,17 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         anim.duration = 1000
         anim.fillAfter = true
         rlSecondMoment.startAnimation(anim)
-        (ivSparkle.background as AnimationDrawable).start()
+
+        playSparkling()
     }
 
 
-    private fun playSparkleInFormation() {
+    private fun playFormation() {
         (ivSparkle1.background as AnimationDrawable).start()
+    }
+
+    private fun playSparkling() {
+        (ivSparkle.background as AnimationDrawable).start()
     }
 
     /*
