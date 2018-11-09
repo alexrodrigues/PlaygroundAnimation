@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/exoplayer"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp" />
+
+            <ImageView
+                android:id="@+id/ivGif"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_width="120dp"
+                android:alpha="0.8"
+                android:layout_gravity="center"
+                android:layout_height="120dp" />
+
+        </FrameLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:max="100"
+            android:progress="100"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="Alpha: 1.0"
+            android:id="@+id/tvAlphaValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
