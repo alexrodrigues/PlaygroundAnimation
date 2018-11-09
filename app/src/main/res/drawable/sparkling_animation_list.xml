@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_1"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_2"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_3"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_4"/>
+
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_5"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_6"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_7"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_8"/>
+
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_9"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_10"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_11"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_12"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_13"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_14"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_15"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_16"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_17"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_18"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_20"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_21"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_22"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_23"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_23"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_24"/>
+
+    <item
+        android:duration="100"
+        android:drawable="@drawable/loop_25"/>
+
+
+
+</animation-list>
