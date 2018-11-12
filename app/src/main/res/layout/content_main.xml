@@ -65,7 +65,15 @@
             android:layout_height="210dp"
             android:src="@drawable/cover"/>
 
+
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivSparkleLoop"
+        android:alpha="0"
+        android:background="@drawable/sparkles_loop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
     <View
@@ -80,8 +88,6 @@
 
     <ImageView
         android:id="@+id/ivSparkingIntro"
-        android:alpha="0"
-        android:background="@drawable/sparkles_intro"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

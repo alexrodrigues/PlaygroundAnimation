@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                     startDisneyParticleIntro()
                 }
             }, 6000)
+
         }
     }
 
@@ -112,8 +113,18 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun startDisneyParticleIntro() {
-        ivSparkingIntro.animate().alpha(1f).setDuration(1000)
-        (ivSparkingIntro.background as AnimationDrawable).start()
+        Handler().postDelayed({
+            runOnUiThread {
+                sparklesLoop()
+            }
+        }, 1800)
+        Glide.with(this).load(R.drawable.sparkles).into(ivSparkingIntro)
+    }
+
+    private fun sparklesLoop() {
+        ivSparkingIntro.visibility = View.GONE
+        ivSparkleLoop.alpha = 1.0f
+        (ivSparkleLoop.background as AnimationDrawable).start()
     }
 
     /*
