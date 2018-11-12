@@ -125,7 +125,16 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivSparkingIntro.visibility = View.GONE
         ivSparkleLoop.alpha = 1.0f
         (ivSparkleLoop.background as AnimationDrawable).start()
+        wobble()
     }
+
+    private fun wobble() {
+        val wobbling = AnimationUtils.loadAnimation(this, R.anim.wobble)
+        ivCoverSecundary.startAnimation(wobbling)
+        ivSparkle.startAnimation(wobbling)
+    }
+
+
 
     /*
     private fun playVideo() {
