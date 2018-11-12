@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity
 import android.util.DisplayMetrics
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.TranslateAnimation
@@ -95,6 +96,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivEtherBackground.animate().alpha(1f).setDuration(2000)
         ivSparkingEther.animate().alpha(1f).setDuration(2000)
         (ivSparkingEther.background as AnimationDrawable).start()
+        rlFirstMoment.visibility = View.GONE
     }
 
     private fun playFormation() {
