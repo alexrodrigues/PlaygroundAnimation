@@ -98,8 +98,9 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
     private fun showEtherBackground() {
         ivEtherBackground.animate().alpha(1f).setDuration(2000)
-        ivSparkingEther.animate().alpha(1f).setDuration(2000)
-        (ivSparkingEther.background as AnimationDrawable).start()
+        ivStars.animate().alpha(1f).setDuration(2000)
+        Glide.with(this).load(R.drawable.starts).into(ivStars)
+
     }
 
     private fun playFormation() {

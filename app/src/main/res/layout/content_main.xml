@@ -33,10 +33,9 @@
         android:layout_height="match_parent" />
 
     <ImageView
-        android:id="@+id/ivSparkingEther"
+        android:id="@+id/ivStars"
         android:scaleType="centerCrop"
         android:alpha="0.0"
-        android:background="@drawable/blinking_stars"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
