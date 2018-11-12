@@ -13,6 +13,7 @@ import android.view.animation.AnimationUtils
 import android.view.animation.TranslateAnimation
 import android.widget.RelativeLayout
 import android.widget.SeekBar
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -42,7 +43,11 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             playFormation()
             Handler().postDelayed({
                 runOnUiThread {
-                    dismissFirstMoment()
+                    hideFirstMoment()
+                }
+            }, 2800)
+            Handler().postDelayed({
+                runOnUiThread {
                     showSecondMoment()
                 }
             }, 3000)
@@ -54,14 +59,14 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         }
     }
 
+    private fun hideFirstMoment() {
+        ivFormation.visibility = View.INVISIBLE
+    }
+
     private fun boucing(target: RelativeLayout) {
         val animation = AnimationUtils.loadAnimation(this, R.anim.boucing)
         animation.repeatCount = Animation.INFINITE
         target.startAnimation(animation)
-    }
-
-    private fun dismissFirstMoment() {
-        rlFirstMoment.animate().alpha(0f)
     }
 
     private fun showSecondMoment() {
@@ -72,7 +77,6 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     private fun moveToCenter() {
 
         val dm = DisplayMetrics()
-        // this.getWindowManager().getDefaultDisplay().getMetrics( dm );
         windowManager.defaultDisplay.getMetrics(dm)
         val statusBarOffset = dm.heightPixels - root.measuredHeight
 
@@ -96,11 +100,10 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivEtherBackground.animate().alpha(1f).setDuration(2000)
         ivSparkingEther.animate().alpha(1f).setDuration(2000)
         (ivSparkingEther.background as AnimationDrawable).start()
-        rlFirstMoment.visibility = View.GONE
     }
 
     private fun playFormation() {
-        (ivSparkle1.background as AnimationDrawable).start()
+        Glide.with(this).load(R.drawable.formation).into(ivFormation)
     }
 
     private fun playSparkling() {

@@ -27,7 +27,5 @@
     <item android:duration="200" android:drawable="@drawable/estrelas_0097"/>
     <item android:duration="200" android:drawable="@drawable/estrelas_0098"/>
     <item android:duration="200" android:drawable="@drawable/estrelas_0099"/>
-    <item android:duration="200" android:drawable="@drawable/estrelas_0100"/>
-
 
 </animation-list>
