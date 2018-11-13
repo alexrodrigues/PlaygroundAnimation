@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/root"
     android:background="#242a2c"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
@@ -14,7 +13,7 @@
     <ImageView
         android:id="@+id/ivFormation"
         android:layout_width="200dp"
-        android:layout_height="300dp"  />
+        android:layout_height="300dp" />
 
     <ImageView
         android:id="@+id/ivCoverPrimary"
@@ -22,58 +21,64 @@
         android:layout_height="210dp"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="45dp"
-        android:src="@drawable/cover"/>
+        android:src="@drawable/cover" />
 
     <ImageView
         android:id="@+id/ivEtherBackground"
-        android:alpha="0.0"
-        android:src="@drawable/fundo_etereo"
-        android:scaleType="centerCrop"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundo_etereo" />
 
     <ImageView
         android:id="@+id/ivStars"
-        android:scaleType="centerCrop"
-        android:alpha="0.0"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
-
-    <RelativeLayout
+        android:layout_height="match_parent"
         android:alpha="0.0"
-        android:id="@+id/rlSecondMoment"
-        android:layout_width="200dp"
-        android:layout_height="300dp">
+        android:scaleType="centerCrop" />
+
+
+    <FrameLayout
+        android:id="@+id/flContainerCoverSecunday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlSecondMoment"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:alpha="0.0">
+
+            <ImageView
+                android:id="@+id/ivSparkle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/sparkling_animation_list" />
+
+            <ImageView
+                android:id="@+id/ivCoverSecundary"
+                android:layout_width="140dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cover" />
+
+
+        </RelativeLayout>
 
         <ImageView
-            android:id="@+id/ivSparkle"
-            android:background="@drawable/sparkling_animation_list"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentTop="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:id="@+id/ivSparkleLoop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@drawable/sparkles_loop" />
 
-        <ImageView
-            android:id="@+id/ivCoverSecundary"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_width="140dp"
-            android:layout_height="210dp"
-            android:src="@drawable/cover"/>
-
-
-    </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/ivSparkleLoop"
-        android:alpha="0"
-        android:background="@drawable/sparkles_loop"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    </FrameLayout>
 
 
     <View
@@ -82,8 +87,8 @@
         android:layout_height="300dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:visibility="invisible"
-        android:src="@drawable/cover"/>
+        android:src="@drawable/cover"
+        android:visibility="invisible" />
 
 
     <ImageView

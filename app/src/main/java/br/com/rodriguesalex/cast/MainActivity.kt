@@ -16,6 +16,14 @@ import android.widget.SeekBar
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import android.view.MotionEvent
+import android.R.attr.y
+import android.support.v4.view.ViewCompat.setY
+import android.R.attr.x
+import android.support.v4.view.ViewCompat.setX
+import android.graphics.PointF
+import android.view.View.OnTouchListener
+import android.widget.FrameLayout
 
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
@@ -126,6 +134,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivSparkleLoop.alpha = 1.0f
         (ivSparkleLoop.background as AnimationDrawable).start()
         wobble()
+        draggableCover()
     }
 
     private fun wobble() {
@@ -134,7 +143,8 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivSparkle.startAnimation(wobbling)
     }
 
-
+    private fun draggableCover() {
+    }
 
     /*
     private fun playVideo() {
