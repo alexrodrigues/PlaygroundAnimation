@@ -49,17 +49,17 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                 runOnUiThread {
                     hideFirstMoment()
                 }
-            }, 1500)
+            }, Constants.HideFirstMomentDelay)
             Handler().postDelayed({
                 runOnUiThread {
                     showSecondMoment()
                 }
-            }, 1700)
+            }, Constants.ShowSecondMomentDelay)
             Handler().postDelayed({
                 runOnUiThread {
                     startDisneyParticleIntro()
                 }
-            }, 6000)
+            }, Constants.ShowDisneyParticleDelay)
 
         }
     }
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         val yDest = dm.heightPixels / 2 - (vReferencia.measuredHeight / 2 - statusBarOffset)
 
         val anim = TranslateAnimation(0f, (xDest - originalPos[0]).toFloat(), 0f, (yDest - originalPos[1]).toFloat())
-        anim.duration = 1000
+        anim.duration = Constants.MoveToCenterDuration
         anim.fillAfter = true
         rlSecondMoment.startAnimation(anim)
 
@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             runOnUiThread {
                 sparklesLoop()
             }
-        }, 1800)
+        }, Constants.ShowSparklesLoopDelay)
         Glide.with(this).load(R.drawable.sparkles).into(ivSparkingIntro)
     }
 
@@ -144,7 +144,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             runOnUiThread {
                 ivSparkleLaunchSmoke.animate().alpha(0f).setDuration(1000)
             }
-        }, 1000)
+        }, Constants.ShowLaunchSmokeDelay)
     }
 
     private fun launchSmoke() {
