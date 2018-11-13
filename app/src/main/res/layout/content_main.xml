@@ -12,8 +12,10 @@
 
     <ImageView
         android:id="@+id/ivFormation"
+        android:alpha="0"
         android:layout_width="200dp"
-        android:layout_height="300dp" />
+        android:layout_height="300dp"
+        android:background="@drawable/formation" />
 
     <ImageView
         android:id="@+id/ivCoverPrimary"
@@ -22,6 +24,8 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="45dp"
         android:src="@drawable/cover" />
+
+
 
     <ImageView
         android:id="@+id/ivEtherBackground"

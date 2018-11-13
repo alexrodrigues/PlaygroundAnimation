@@ -49,12 +49,12 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                 runOnUiThread {
                     hideFirstMoment()
                 }
-            }, 2500)
+            }, 1500)
             Handler().postDelayed({
                 runOnUiThread {
                     showSecondMoment()
                 }
-            }, 3000)
+            }, 1700)
             Handler().postDelayed({
                 runOnUiThread {
                     startDisneyParticleIntro()
@@ -104,11 +104,8 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun playFormation() {
-        Glide
-                .with(this)
-                .asGif()
-                .load(R.drawable.formation)
-                .into(ivFormation)
+        ivFormation.animate().alpha(1f).setDuration(500)
+        (ivFormation.background as AnimationDrawable).start()
     }
 
     private fun playSparkling() {
