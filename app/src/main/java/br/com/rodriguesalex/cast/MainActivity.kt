@@ -33,11 +33,6 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     override fun onStopTrackingTouch(p0: SeekBar?) {
-//        p0?.progress?.let {
-//            val float = (it.toFloat()/100f)
-//            container.alpha =  float
-//            tvAlphaValue.text = "Alpha: $float"
-//        }
     }
 
     override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
@@ -134,7 +129,9 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivSparkleLoop.alpha = 1.0f
         (ivSparkleLoop.background as AnimationDrawable).start()
         wobble()
-        draggableCover()
+        flContainerCoverSecundary.setOnClickListener {
+            launchUp()
+        }
     }
 
     private fun wobble() {
@@ -143,7 +140,8 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivSparkle.startAnimation(wobbling)
     }
 
-    private fun draggableCover() {
+    private fun launchUp() {
+        flContainerCoverSecundary.animate().y(-1400f)
     }
 
     /*
