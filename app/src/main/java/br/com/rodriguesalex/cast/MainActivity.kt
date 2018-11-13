@@ -8,23 +8,12 @@ import android.util.DisplayMetrics
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.TranslateAnimation
-import android.widget.RelativeLayout
 import android.widget.SeekBar
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import android.view.MotionEvent
-import android.R.attr.y
-import android.support.v4.view.ViewCompat.setY
-import android.R.attr.x
-import android.support.v4.view.ViewCompat.setX
-import android.graphics.PointF
-import android.view.View.OnTouchListener
-import android.widget.FrameLayout
-import com.bumptech.glide.load.resource.gif.GifDrawable
 
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {

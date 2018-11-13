@@ -3,43 +3,43 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00024"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00027"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00030"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00033"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00036"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00039"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00041"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00044"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00047"/>
 
     <item
-        android:duration="100"
+        android:duration="110"
         android:drawable="@drawable/formacao_00048"/>
 
 </animation-list>
