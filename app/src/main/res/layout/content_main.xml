@@ -1,61 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#242a2c"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ImageView
+        android:id="@+id/ivFormation"
+        android:layout_width="200dp"
+        android:layout_height="300dp" />
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/ivCoverPrimary"
+        android:layout_width="140dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/cover" />
+
+    <ImageView
+        android:id="@+id/ivEtherBackground"
         android:layout_width="match_parent"
-        android:layout_height="420dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:orientation="vertical"
-        android:layout_gravity="center" >
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fundo_etereo" />
 
-        <FrameLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivStars"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.0"
+        android:scaleType="centerCrop" />
 
-            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
-                android:id="@+id/exoplayer"
-                android:layout_width="wrap_content"
-                android:layout_height="350dp" />
+
+    <FrameLayout
+        android:id="@+id/flContainerCoverSecundary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlSecondMoment"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:alpha="0.0">
 
             <ImageView
-                android:id="@+id/ivGif"
-                android:src="@drawable/ic_launcher_foreground"
-                android:layout_width="120dp"
-                android:alpha="0.8"
-                android:layout_gravity="center"
-                android:layout_height="120dp" />
+                android:id="@+id/ivSparkle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/sparkling_animation_list" />
 
-        </FrameLayout>
+            <ImageView
+                android:id="@+id/ivCoverSecundary"
+                android:layout_width="140dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cover" />
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:max="100"
-            android:progress="100"
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivSparkleLoop"
             android:layout_width="match_parent"
-            android:layout_height="40dp" />
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@drawable/sparkles_loop" />
 
-        <TextView
-            android:text="Alpha: 1.0"
-            android:id="@+id/tvAlphaValue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            />
-
-    </LinearLayout>
+    </FrameLayout>
 
 
+    <View
+        android:id="@+id/vReferencia"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cover"
+        android:visibility="invisible" />
 
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/ivSparkingIntro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/ivSparkleLaunchSmoke"
+        android:layout_width="match_parent"
+        android:alpha="0"
+        android:layout_height="match_parent"
+        android:background="@drawable/sparkles_out" />
+
+
+
+</RelativeLayout>

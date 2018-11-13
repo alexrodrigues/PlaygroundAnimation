@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true"
+    >
+
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00174"/>
+
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00177"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00180"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00183"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00186"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00189"/>
+
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00191"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00194"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00197"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00200"/>
+
+    <item
+        android:duration="110"
+        android:drawable="@drawable/faisca_saida_00202"/>
+
+
+
+
+</animation-list>
