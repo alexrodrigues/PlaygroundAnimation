@@ -56,21 +56,16 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             }, 3000)
             Handler().postDelayed({
                 runOnUiThread {
-                    startDisneyParticleIntro()
+//                    startDisneyParticleIntro()
+                    sparklesLoop()
                 }
-            }, 6000)
+            }, 4000)
 
         }
     }
 
     private fun hideFirstMoment() {
         ivFormation.visibility = View.INVISIBLE
-    }
-
-    private fun boucing(target: RelativeLayout) {
-        val animation = AnimationUtils.loadAnimation(this, R.anim.boucing)
-        animation.repeatCount = Animation.INFINITE
-        target.startAnimation(animation)
     }
 
     private fun showSecondMoment() {
