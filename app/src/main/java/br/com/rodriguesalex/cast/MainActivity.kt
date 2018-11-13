@@ -141,7 +141,18 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun launchUp() {
-        flContainerCoverSecundary.animate().y(-1400f)
+        flContainerCoverSecundary.animate().y(-1500f).setDuration(1000)
+        launchSmoke()
+        Handler().postDelayed({
+            runOnUiThread {
+                ivSparkleLaunchSmoke.animate().alpha(0f).setDuration(1000)
+            }
+        }, 1000)
+    }
+
+    private fun launchSmoke() {
+        ivSparkleLaunchSmoke.animate().alpha(1f).setDuration(2000)
+        (ivSparkleLaunchSmoke.background as AnimationDrawable).start()
     }
 
     /*

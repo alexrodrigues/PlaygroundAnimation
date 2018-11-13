@@ -96,5 +96,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <ImageView
+        android:id="@+id/ivSparkleLaunchSmoke"
+        android:layout_width="match_parent"
+        android:alpha="0"
+        android:layout_height="match_parent"
+        android:background="@drawable/sparkles_out" />
+
+
 
 </RelativeLayout>
