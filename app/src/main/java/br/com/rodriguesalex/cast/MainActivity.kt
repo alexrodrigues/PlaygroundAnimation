@@ -24,6 +24,7 @@ import android.support.v4.view.ViewCompat.setX
 import android.graphics.PointF
 import android.view.View.OnTouchListener
 import android.widget.FrameLayout
+import com.bumptech.glide.load.resource.gif.GifDrawable
 
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
@@ -48,7 +49,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
                 runOnUiThread {
                     hideFirstMoment()
                 }
-            }, 2800)
+            }, 2500)
             Handler().postDelayed({
                 runOnUiThread {
                     showSecondMoment()
@@ -64,17 +65,12 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun hideFirstMoment() {
-        ivFormation.visibility = View.INVISIBLE
-    }
-
-    private fun boucing(target: RelativeLayout) {
-        val animation = AnimationUtils.loadAnimation(this, R.anim.boucing)
-        animation.repeatCount = Animation.INFINITE
-        target.startAnimation(animation)
+        rlSecondMoment.animate().alpha(1f)
     }
 
     private fun showSecondMoment() {
-        rlSecondMoment.animate().alpha(1f)
+        ivFormation.visibility = View.GONE
+        ivCoverPrimary.visibility = View.GONE
         moveToCenter()
     }
 
@@ -108,7 +104,11 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun playFormation() {
-        Glide.with(this).load(R.drawable.formation).into(ivFormation)
+        Glide
+                .with(this)
+                .asGif()
+                .load(R.drawable.formation)
+                .into(ivFormation)
     }
 
     private fun playSparkling() {
