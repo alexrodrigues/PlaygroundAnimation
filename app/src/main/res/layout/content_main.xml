@@ -42,6 +42,12 @@
         android:alpha="0.0"
         android:scaleType="centerCrop" />
 
+    <ImageView
+        android:id="@+id/ivSparkleLaunchSmoke"
+        android:layout_width="match_parent"
+        android:alpha="0"
+        android:layout_height="match_parent"
+        android:background="@drawable/sparkles_out" />
 
     <FrameLayout
         android:id="@+id/flContainerCoverSecundary"
@@ -83,8 +89,8 @@
             android:id="@+id/ivSparkleLoop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="-55dp"
-            android:layout_marginRight="-50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginRight="-45dp"
             android:alpha="0"
             android:background="@drawable/sparkles_loop" />
 
@@ -109,12 +115,6 @@
         android:layout_height="match_parent" />
 
 
-    <ImageView
-        android:id="@+id/ivSparkleLaunchSmoke"
-        android:layout_width="match_parent"
-        android:alpha="0"
-        android:layout_height="match_parent"
-        android:background="@drawable/sparkles_out" />
 
 
 
