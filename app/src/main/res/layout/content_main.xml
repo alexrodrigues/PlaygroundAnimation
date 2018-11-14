@@ -13,7 +13,7 @@
     <ImageView
         android:id="@+id/ivFormation"
         android:alpha="1"
-        android:layout_marginLeft="-25dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="-25dp"
         android:layout_width="250dp"
         android:layout_height="350dp"
@@ -23,7 +23,7 @@
         android:id="@+id/ivCoverPrimary"
         android:layout_width="140dp"
         android:layout_height="210dp"
-        android:layout_marginLeft="30dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp"
         android:src="@drawable/cover" />
 
@@ -54,6 +54,7 @@
             android:id="@+id/rlSecondMoment"
             android:layout_width="200dp"
             android:layout_height="300dp"
+            android:layout_gravity="center|top"
             android:alpha="0.0">
 
             <ImageView

@@ -46,9 +46,9 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             }, Constants.ShowSecondMomentDelay)
             Handler().postDelayed({
                 runOnUiThread {
-                    startDisneyParticleIntro()
+                    sparklesLoop()
                 }
-            }, Constants.ShowDisneyParticleDelay)
+            }, Constants.ShowSparklesLoopDelay)
 
         }
     }
@@ -99,15 +99,6 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
     private fun playSparkling() {
         (ivSparkle.background as AnimationDrawable).start()
-    }
-
-    private fun startDisneyParticleIntro() {
-        Handler().postDelayed({
-            runOnUiThread {
-                sparklesLoop()
-            }
-        }, Constants.ShowSparklesLoopDelay)
-        Glide.with(this).load(R.drawable.sparkles).into(ivSparkingIntro)
     }
 
     private fun sparklesLoop() {
