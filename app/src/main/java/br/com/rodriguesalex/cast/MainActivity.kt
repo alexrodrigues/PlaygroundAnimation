@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        fab.setOnClickListener { view ->
+        ivCoverPrimary.setOnClickListener {
             playFormation()
             Handler().postDelayed({
                 runOnUiThread {
@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             }, Constants.ShowSparklesLoopDelay)
 
         }
+
     }
 
     private fun hideFirstMoment() {
