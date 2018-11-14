@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         roundImageView()
 
         ivCoverPrimary.setOnClickListener {
+            playSound(R.raw.entrada, false)
             playFormation()
             Handler().postDelayed({
                 runOnUiThread {
@@ -149,6 +150,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun launchSmoke() {
+        playSound(R.raw.launch, false)
         ivSparkleLoop.animate().alpha(0f)
         ivSparkleLaunchSmoke.animate().alpha(1f)
         (ivSparkleLaunchSmoke.background as AnimationDrawable).start()
@@ -157,6 +159,10 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     private fun playSound(resId: Int, isLoop: Boolean) {
         val mediaPlayer = MediaPlayer.create(applicationContext, resId)
         mediaPlayer.isLooping = isLoop
+        mediaPlayer.setOnCompletionListener {
+            it.isLooping = isLoop
+        }
+        mediaPlayer.setVolume(1000f, 1000f)
         mediaPlayer.start()
     }
 
