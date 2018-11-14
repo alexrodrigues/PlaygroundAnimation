@@ -10,6 +10,12 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ImageView
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:background="@drawable/fake_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <ImageView
         android:id="@+id/ivFormation"
@@ -63,6 +69,14 @@
             android:alpha="0">
 
             <ImageView
+                android:id="@+id/ivArrow"
+                android:alpha="0"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/seta"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" />
+
+            <ImageView
                 android:id="@+id/ivSparkle"
                 android:layout_margin="-25dp"
                 android:layout_width="wrap_content"
@@ -80,9 +94,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true" />
 
-
-
-
         </RelativeLayout>
 
         <ImageView
@@ -93,9 +104,6 @@
             android:background="@drawable/sparkles_loop" />
 
     </FrameLayout>
-
-
-
 
     <View
         android:id="@+id/vReferencia"
@@ -111,9 +119,5 @@
         android:id="@+id/ivSparkingIntro"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-
-
-
 
 </RelativeLayout>

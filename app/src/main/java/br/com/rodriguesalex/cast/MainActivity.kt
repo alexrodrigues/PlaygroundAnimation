@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             }, Constants.ShowSecondMomentDelay)
             Handler().postDelayed({
                 runOnUiThread {
+                    showArrow()
                     sparklesLoop()
                 }
             }, Constants.ShowSparklesLoopDelay)
@@ -112,6 +113,12 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
     private fun playSparkling() {
         (ivSparkle.background as AnimationDrawable).start()
+    }
+
+    private fun showArrow() {
+        ivArrow.animate().alpha(1f).setDuration(200)
+        val anim = AnimationUtils.loadAnimation(this, R.anim.up_down)
+        ivArrow.startAnimation(anim)
     }
 
     private fun sparklesLoop() {
