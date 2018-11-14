@@ -10,6 +10,7 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+
     <ImageView
         android:id="@+id/ivFormation"
         android:alpha="1"
@@ -24,10 +25,7 @@
         android:layout_width="140dp"
         android:layout_height="210dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:src="@drawable/cover" />
-
-
+        android:layout_marginTop="45dp" />
 
     <ImageView
         android:id="@+id/ivEtherBackground"
@@ -74,8 +72,7 @@
                 android:layout_width="140dp"
                 android:layout_height="210dp"
                 android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/cover" />
+                android:layout_centerVertical="true" />
 
 
 

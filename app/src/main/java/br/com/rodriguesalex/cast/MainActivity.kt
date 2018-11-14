@@ -14,6 +14,12 @@ import android.widget.SeekBar
 import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import android.R.attr.radius
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.request.RequestOptions
+
+
 
 
 class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
@@ -31,6 +37,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        roundImageView()
 
         ivCoverPrimary.setOnClickListener {
             playFormation()
@@ -90,7 +97,12 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivEtherBackground.animate().alpha(1f).setDuration(2000)
         ivStars.animate().alpha(1f).setDuration(2000)
         Glide.with(this).load(R.drawable.starts).into(ivStars)
+    }
 
+    private fun roundImageView() {
+        val options = RequestOptions().transforms(RoundedCorners(8))
+        Glide.with(this).applyDefaultRequestOptions(options).load(R.drawable.cover).into(ivCoverPrimary)
+        Glide.with(this).applyDefaultRequestOptions(options).load(R.drawable.cover).into(ivCoverSecundary)
     }
 
     private fun playFormation() {
