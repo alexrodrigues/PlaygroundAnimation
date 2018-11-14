@@ -82,10 +82,14 @@
             android:id="@+id/ivSparkleLoop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="-66dp"
+            android:layout_marginRight="-60dp"
             android:alpha="0"
             android:background="@drawable/sparkles_loop" />
 
     </FrameLayout>
+
+
 
 
     <View
