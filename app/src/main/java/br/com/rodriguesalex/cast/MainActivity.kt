@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import android.R.attr.radius
+import android.media.MediaPlayer
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.request.RequestOptions
@@ -151,6 +152,12 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         ivSparkleLoop.animate().alpha(0f)
         ivSparkleLaunchSmoke.animate().alpha(1f)
         (ivSparkleLaunchSmoke.background as AnimationDrawable).start()
+    }
+
+    private fun playSound(resId: Int, isLoop: Boolean) {
+        val mediaPlayer = MediaPlayer.create(applicationContext, resId)
+        mediaPlayer.isLooping = isLoop
+        mediaPlayer.start()
     }
 
     /*
