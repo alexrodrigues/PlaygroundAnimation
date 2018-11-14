@@ -128,7 +128,7 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun launchSmoke() {
-        ivSparkleLaunchSmoke.animate().alpha(1f).setDuration(2000)
+        ivSparkleLaunchSmoke.animate().alpha(1f)
         (ivSparkleLaunchSmoke.background as AnimationDrawable).start()
     }
 
