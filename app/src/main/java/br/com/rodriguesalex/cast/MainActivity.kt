@@ -35,13 +35,15 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
     }
 
+    private var currentMediaPlayer: MediaPlayer? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         roundImageView()
 
         ivCoverPrimary.setOnClickListener {
-            playSound(R.raw.entrada, false)
+            playSound(R.raw.intro, false)
             playFormation()
             Handler().postDelayed({
                 runOnUiThread {
@@ -50,11 +52,13 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             }, Constants.HideFirstMomentDelay)
             Handler().postDelayed({
                 runOnUiThread {
+
                     showSecondMoment()
                 }
             }, Constants.ShowSecondMomentDelay)
             Handler().postDelayed({
                 runOnUiThread {
+                    playSound(R.raw.sparkles, true)
                     showArrow()
                     sparklesLoop()
                 }
@@ -157,13 +161,14 @@ class MainActivity : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     private fun playSound(resId: Int, isLoop: Boolean) {
-        val mediaPlayer = MediaPlayer.create(applicationContext, resId)
-        mediaPlayer.isLooping = isLoop
-        mediaPlayer.setOnCompletionListener {
+        currentMediaPlayer?.stop()
+        currentMediaPlayer = MediaPlayer.create(this, resId)
+        currentMediaPlayer?.isLooping = isLoop
+        currentMediaPlayer?.setOnCompletionListener {
             it.isLooping = isLoop
         }
-        mediaPlayer.setVolume(1000f, 1000f)
-        mediaPlayer.start()
+        currentMediaPlayer?.setVolume(1000f, 1000f)
+        currentMediaPlayer?.start()
     }
 
     /*
