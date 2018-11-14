@@ -60,6 +60,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:alpha="0"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/seta"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp" />
+
         <RelativeLayout
             android:id="@+id/rlSecondMoment"
             android:layout_width="250dp"
@@ -67,14 +77,6 @@
             android:layout_marginTop="-25dp"
             android:layout_gravity="center|top"
             android:alpha="0">
-
-            <ImageView
-                android:id="@+id/ivArrow"
-                android:alpha="0"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/seta"
-                android:layout_width="wrap_content"
-                android:layout_height="45dp" />
 
             <ImageView
                 android:id="@+id/ivSparkle"
