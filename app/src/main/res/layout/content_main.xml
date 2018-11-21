@@ -59,6 +59,7 @@
         <ImageView
             android:id="@+id/ivArrow"
             android:alpha="0"
+            android:padding="8dp"
             android:layout_marginTop="110dp"
             android:layout_gravity="center_horizontal|top"
             android:src="@drawable/seta"
