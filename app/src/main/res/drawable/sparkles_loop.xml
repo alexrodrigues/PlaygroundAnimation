@@ -7,9 +7,9 @@
         android:duration="110"
         android:drawable="@drawable/faiscas_loop_00142"/>
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00143"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00143"/>-->
 
 
     <item
@@ -20,9 +20,9 @@
         <!--android:duration="110"-->
         <!--android:drawable="@drawable/faiscas_loop_00146"/>-->
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00148"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00148"/>-->
 
     <item
         android:duration="110"
@@ -32,9 +32,9 @@
         <!--android:duration="110"-->
         <!--android:drawable="@drawable/faiscas_loop_00151"/>-->
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00152"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00152"/>-->
 
     <item
         android:duration="110"
@@ -44,9 +44,9 @@
         <!--android:duration="110"-->
         <!--android:drawable="@drawable/faiscas_loop_00155"/>-->
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00157"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00157"/>-->
 
     <item
         android:duration="110"
@@ -56,9 +56,9 @@
         <!--android:duration="110"-->
         <!--android:drawable="@drawable/faiscas_loop_00160"/>-->
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00161"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00161"/>-->
 
     <item
         android:duration="110"
@@ -68,9 +68,9 @@
         <!--android:duration="110"-->
         <!--android:drawable="@drawable/faiscas_loop_00164"/>-->
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00166"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00166"/>-->
 
     <item
         android:duration="110"
@@ -80,9 +80,9 @@
         <!--android:duration="110"-->
         <!--android:drawable="@drawable/faiscas_loop_00169"/>-->
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00170"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00170"/>-->
 
     <item
         android:duration="110"
@@ -108,9 +108,9 @@
         android:duration="110"
         android:drawable="@drawable/faiscas_loop_00179"/>
 
-    <item
-        android:duration="110"
-        android:drawable="@drawable/faiscas_loop_00181"/>
+    <!--<item-->
+        <!--android:duration="110"-->
+        <!--android:drawable="@drawable/faiscas_loop_00181"/>-->
 
     <item
         android:duration="110"
