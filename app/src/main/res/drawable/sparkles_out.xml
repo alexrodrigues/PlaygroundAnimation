@@ -1,53 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:oneshot="true">
+    android:oneshot="true"
+    >
 
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00184"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00185"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00186"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00188"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00189"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00191"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00192"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00193"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00195"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00196"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00197"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00199"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00200"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00201"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00203"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00204"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00206"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00207"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00209"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00210"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00212"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00213"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00214"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00216"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00217"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00218"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00219"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00220"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00222"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00223"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00224"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00225"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00226"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00227"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00228"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00229"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00230"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00231"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00232"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00233"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00234"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00235"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00236"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00237"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00238"/>
-    <item android:duration="35" android:drawable="@drawable/faiscas_saida_00239"/>
+
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00184"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00185"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00186"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00188"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00189"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00191"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00192"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00193"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00195"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00196"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00197"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00199"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00200"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00201"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00203"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00204"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00206"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00207"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00209"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00210"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00212"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00213"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00214"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00216"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00217"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00218"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00219"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00220"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00222"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00223"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00224"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00225"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00226"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00227"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00228"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00229"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00230"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00231"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00232"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00233"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00234"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00235"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00236"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00237"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00238"/>
+    <item android:duration="50" android:drawable="@drawable/faiscas_saida_00239"/>
+
+
 
 </animation-list>
