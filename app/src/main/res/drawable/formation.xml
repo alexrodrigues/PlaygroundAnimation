@@ -6,9 +6,6 @@
         android:duration="80"
         android:drawable="@drawable/formacao_00024"/>
 
-    <item
-        android:duration="80"
-        android:drawable="@drawable/formacao_00027"/>
 
     <item
         android:duration="80"
